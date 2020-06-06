@@ -1,94 +1,114 @@
 <!DOCTYPE html>
 <head>
-  <link href="/normalize.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
-  <title>Grace's Blog</title>
-  <style>
-    header {
-      text-align: center;
-      background: url('https://media-exp1.licdn.com/dms/image/C5622AQEzDD3itl66mA/feedshare-shrink_800/0?e=1592438400&v=beta&t=vApj4zzW2BusdmGw7-f8PhflVMRu6U4OtABuLkVCOF0');
-      background-color: #d8d8d8;
-      background-size: 50% 800px;
-      background-repeat: no-repeat;
-      background-position: center;
-      color: white;
-      font-size: 30px;
-      font-family: 'Sofia';
-      font-weight: bold;
-    }
-    a {
-      color: white;
-      text-decoration: none;
-    }
-    h1 {
-      font-size: 70px;
-    }
-    img {
-      width: 200px;
-      margin: 40px 0px 0px 0px;
-      border: 5px solid black;
-      border-radius: 50px;
-      max-width: 100%;
-      height: auto;
-    }
-    ul {
-      padding: 10px;
-      background: rgba(0,0,0,0.5);
-      list-style-type: none;
-    }
-    li {
-      display: inline;
-      padding: 0px 10px 0px 10px;
-    }
-    article {
-      max-width: 800px;
-      padding: 20px;
-      margin: 0 auto;
-    }
-    li a:hover {
-  color: red;
-    }
-    p {
-      font-family: 'Architects Daughter';
-      font-size: 28px;
-    }
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 36px;
-        padding: 5px;
-      }
-      li {
-        padding: 5px;
-        display: block;
-      }
-    }
-  </style>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap" rel="stylesheet">
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #232323;
+}
+div {
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+  display: block;
+}
+h1 {
+  font-family: 'Oxanium', cursive;
+  text-align: center;
+  font-size: 50px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: auto;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSTzvJKZC5E8gVb8fo0JSt3jki7S1xGGtV652JHCagq_o5ty_vE&usqp=CAU");
+}
+.second{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRL0GtiuXPhelR6rDZvHC_cf0u4EQYUTqs6UQS7LJFf_g4lvWPn&usqp=CAU");
+}
+.third{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSYqLT92k1KoKQZJxT5waxNNjt13ueFYFFVUB2btly34UW3mgsF&usqp=CAU");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
 </head>
+
 <body>
-  <header>
-    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQENORiw8ZJVNA/profile-displayphoto-shrink_100_100/0?e=1594857600&v=beta&t=-QBCuSrTV1kMM1eIQxHV7F-kjgZ9juRALCaTLmY4jBk">
-    <ul>
-      <li><a href="https://gracemaina.github.io/movies&tvseries">Movies & TV Series</a></li>
-      <li><a href="https://gracemaina.github.io/photos">Photos</a></li>
-      <li><a href="https://gracemaina.github.io/poses">Yoga & Meditation</a></li>
-    </ul>
-  </header>
-  <article>
-      <h2>Movies & TV Series</h2>
-    <p>TV Series</p>
-    <h4>Supernatural </br>
-    Lucifer </br>
-    The Big Bang Theory </br>
-    Bulletproof </br>
-    Game of Thrones </br>
-    The Last Kingdom </br>
-    The strain </br>
-    Brooklyn 99 </br>
-  </h4>
-  </article>
-<article>
-    <p>Movies.</p>
-    <h4></h4>
-  </article>
+<h1>Grace Maina's Interests</h1>
+<div class="first">
+  <p>Movies & TV Series <br />
+  <small>Supernatural, Lucifer, The Originals, Legacies, Shadowhumters, Merlin, Teen Wolf, The Big Bang Theory, Bulletproof, Game of Thrones, Da Vinci's Demons, Supergirl, Into The Badlands, Wu Assassins, The Last Kingdom, The Strain, Brooklyn 99, Prison Break, Nikita, The Blacklist, House of Cards, Quantico, Homeland, The Gates, The Last Ship, Legends of Tomorrw, NOS4A2, Strike back, The 100, Under the Dome, Arrow,  Designated Survivor, Smallville, The Secret Circle, Witches of East End, Young Sheldon, 13 Reasons Why, Riverdale, 90210, Empire, If Loving You is Wrong, Breaking Bad, Trinkets, Legion, The Punisher, Sense8, Heroes, Spartacus, Vikings, Atlantis, The Shannara Chronicles, Legend of the Seeker, How to Train Your Dragon, IP Man, The Forgotten Kingdom, Fast & Furious, 3 Idiots, Pyaar Impossible!, RIPD, Deadpool, 6 Underground, Pokémon Detective Pikachu, I Robot, </br> Animations; Big Hero 6, Zootopia, Frozen, Despicable Me, The Incredibles, Ratatouille, Coco, Home, Moana, Inside Out, Riley's First Date, Finding Nemo, The Croods, Onward, The Secret Life of Pets, Epic, Puss in Boots, The Emoji Movie, The Lorax, Kung Fu Panda, Tom & Jerry, Popeye. </small></p>
+</div>
+<div class="second">
+  <p>Yoga & Meditation <br />
+  <small>Tadasana (Mountain Pose), Vrikshasana (Tree Pose), Adho Mukho Svanasana (Downward Facing Dog Pose), Trikonasana (Triangle Pose), Kursiasana (Chair Pose), Naukasana (Boat Pose), Bhujangasana (Cobra Pose), Paschimottanasana, Child's Pose, Sukhasna(The Lotus).</small></p>
+</div>
+  
+<div class="third">   
+<p>Books <br />
+  <small>7 Habits of Highly Effective People(Stephen Covey), Inferno(Dan Brown), The Da Vinci Code(Dan Brown), Angels and Demons(Dan Brown), Cujo(Stephen King), The Mist(Stephen King), Night Shift(Stephen King), Under the Dome(Stephen King), The Dark Tower Series(Stephen King), Harry Porter Series(J.K. Rowling), The Knight Miscellany Series(Gaelen Foley), Black Dagger Brotherhood Series(J.R. Ward).</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
 </body>
